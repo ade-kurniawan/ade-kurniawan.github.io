@@ -40,4 +40,9 @@ var hari= 31,
         bulan = " Desember ";
         break;   
     }
-    console.log (hari + bulan + tahun) 
+
+    if ((1 >= hari <= 31) || (1 >= bulan <= 12) || (1200 >= tahun <=2050) ) {
+        console.log ("Input invalid, silahkan masukkan nilai dengan benar.")
+    } else {
+        console.log (hari + bulan + tahun) ;
+    }
