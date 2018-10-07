@@ -41,7 +41,7 @@ function biggestPair (num) {
 
 
     }
-    return highestInt.toString() + nextHighestInt.toString();
+    return Number(highestInt.toString() + nextHighestInt.toString());
 }
 
 console.log(biggestPair(641573)); // 73
