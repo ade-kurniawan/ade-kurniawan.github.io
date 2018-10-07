@@ -18,14 +18,16 @@ console.log(palindrome('mister')); // false
 */
 
 function palindrome(kata) {
-    var check = /[\W_]/g;
-    var kataKata = kata.toLowerCase().replace(check, "");
-    var balik = kataKata.split("").reverse().join("");
-
-    if (balik === kata) {
-        return "true"
+    var kataBalik = '';
+    
+    for (var i = kata.length - 1; i >= 0; i--) {
+      kataBalik += kata[i];
+    }
+    
+    if (kata === kataBalik) {
+      return true;
     } else {
-        return "false"
+      return false;
     }
   }
   
