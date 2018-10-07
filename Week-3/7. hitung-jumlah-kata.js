@@ -1,5 +1,5 @@
 function hitungJumlahKata(kalimat) {
-    counter = 1
+    var counter = 1
     for (var i=0; i < kalimat.length; i++) {
         if (kalimat[i] === ' ') {
             counter = counter + 1
