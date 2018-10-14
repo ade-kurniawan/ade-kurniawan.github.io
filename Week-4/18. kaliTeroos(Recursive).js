@@ -16,7 +16,7 @@ function kaliTerusRekursif(angka) {
   } else if (angka === 0) {
     return 0;
   } else {
-    for (let i = 0; i < strAngka.length; i++) {
+    for (var i = 0; i < strAngka.length; i++) {
       hasilKali = Number(strAngka[i]) * hasilKali;
     }
     angka = hasilKali;

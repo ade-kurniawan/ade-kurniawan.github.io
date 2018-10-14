@@ -7,10 +7,10 @@ function hitungHuruf(kata) {
   var arrKalimat = kata.split(' ');
   var banding = 0, hasil = -1;
   
-  for (let i = 0; i < arrKalimat.length; i++) {
+  for (var i = 0; i < arrKalimat.length; i++) {
     var arrKata = arrKalimat[i].split('');
-    for (let j = 0; j < arrKata.length; j++) {
-      for (let k = 0; k < arrKata.length; k++) {
+    for (var j = 0; j < arrKata.length; j++) {
+      for (var k = 0; k < arrKata.length; k++) {
         var jumlah = 0;
         if (j !== k && arrKata[j] === arrKata[k]) {
           jumlah++;

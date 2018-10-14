@@ -13,7 +13,7 @@ Pada function passwordGenerator implementasikan requirement dibawah ini untuk me
 
 NOTE:
 
-Semua manipulasi string (changeVocals, reverseWord, setLowerUpperCase, removeSpaces) diletakkan di passwordGenerator dan return password-nya dari function ini juga
+Semua manipulasi string (changeVocals, reverseWord, setLowerUpperCase, removeSpaces) divarakkan di passwordGenerator dan return password-nya dari function ini juga
 */
 
 function changeVocals (str) {
@@ -24,8 +24,8 @@ function changeVocals (str) {
   var indeks;
   var hasil = [];
   
-  for (let i = 0; i < arrStr.length; i++) {
-    for (let j = 0; j < hurufVokal.length; j++) {
+  for (var i = 0; i < arrStr.length; i++) {
+    for (var j = 0; j < hurufVokal.length; j++) {
       if (arrStr[i] === hurufVokal[j]) {
         indeks = alfabet.indexOf(arrStr[i]) + 1;
         arrStr[i] = alfabet[indeks];
@@ -41,7 +41,7 @@ function reverseWord (str) {
 
   var balik = [];
   
-  for (let i = str.length - 1; i >=0; i--) {
+  for (var i = str.length - 1; i >=0; i--) {
     balik.push(str[i]);
   }
   
@@ -52,7 +52,7 @@ function setLowerUpperCase (str) {
   //code di sini
   var hasil = '';
   
-  for (let i = 0; i < str.length; i++) {
+  for (var i = 0; i < str.length; i++) {
     uppercase = str[i].toUpperCase();
     lowercase = str[i].toLowerCase();
     

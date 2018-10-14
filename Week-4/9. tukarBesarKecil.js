@@ -3,11 +3,11 @@ Diberikan function tukarBesarKecil(kalimat) yang menerima satu parameter berupa 
 */
 
 function tukarBesarKecil(kalimat) {
-  // you can only write your code here!
+
   var tukar = '';
   var uppercase, lowercase;
   
-  for (let i = 0; i < kalimat.length; i++) {
+  for (var i = 0; i < kalimat.length; i++) {
     uppercase = kalimat[i].toUpperCase();
     lowercase = kalimat[i].toLowerCase();
     if (kalimat[i] === uppercase) {

@@ -12,7 +12,7 @@ function changeMe(arr) {
   var nama;
   var year = (new Date()).getFullYear();
   
-  for (let i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; i++) {
     var objek = {};
     
     objek.firstName = arr[i][0];

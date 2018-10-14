@@ -16,7 +16,7 @@ function getTotal(arrNumber) {
   var angkaTerbesar = arrNumber[0];
   var muncul = 1;
   
-  for (let i = 1; i < arrNumber.length; i++) {
+  for (var i = 1; i < arrNumber.length; i++) {
     if (arrNumber[0] === arrNumber[i]) {
       muncul++;
     }

@@ -3,10 +3,10 @@ Diberikan sebuah function checkAB(str) yang menerima satu parameter berupa strin
 */
 
 function checkAB(num) {
-  // you can only write your code here!
+
   var charA, charB;
   
-  for (let i = 0; i < num.length; i++) {
+  for (var i = 0; i < num.length; i++) {
     if (num[i] === 'a') {
       charA = i;
     } else if (num[i] === 'b') {
